@@ -10,11 +10,11 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <section>
+    <section className="">
       <div className="container mx-auto px-6 md:px-0">
         <div className="rounded-md relative">
           <h1 className="text-3xl md:text-8xl font-bold text-center text-white absolute bottom-5 left-5">Homepage</h1>
-          <img className="rounded-xl" src={bannerImage} alt="Banner-image" />
+          <img className="rounded-xl h-full max-h-[1000px] w-full object-cover" src={bannerImage} alt="Banner-image" />
         </div>
       </div>
     </section>
