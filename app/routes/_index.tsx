@@ -1,22 +1,48 @@
 import type { MetaFunction } from "@remix-run/node";
-import bannerImage from "~/images/banner.jpeg"; // Adjust the path as necessary
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Home | Website Template" },
-    { name: "description", content: "Welcome to the landing page" },
+    { title: "New Remix App" },
+    { name: "description", content: "Welcome to Remix!" },
   ];
 };
 
 export default function Index() {
   return (
-    <section className="">
-      <div className="container mx-auto px-6 md:px-0">
-        <div className="rounded-md relative">
-          <h1 className="text-3xl md:text-8xl font-bold text-center text-white absolute bottom-5 left-5">Homepage</h1>
-          <img className="rounded-xl h-full max-h-[1000px] w-full object-cover" src={bannerImage} alt="Banner-image" />
-        </div>
-      </div>
-    </section>
+    <div className="font-sans p-4">
+      <h1 className="text-3xl">Welcome to Remix</h1>
+      <ul className="list-disc mt-4 pl-6 space-y-2">
+        <li>
+          <a
+            className="text-blue-700 underline visited:text-purple-900"
+            target="_blank"
+            href="https://remix.run/start/quickstart"
+            rel="noreferrer"
+          >
+            5m Quick Start
+          </a>
+        </li>
+        <li>
+          <a
+            className="text-blue-700 underline visited:text-purple-900"
+            target="_blank"
+            href="https://remix.run/start/tutorial"
+            rel="noreferrer"
+          >
+            30m Tutorial
+          </a>
+        </li>
+        <li>
+          <a
+            className="text-blue-700 underline visited:text-purple-900"
+            target="_blank"
+            href="https://remix.run/docs"
+            rel="noreferrer"
+          >
+            Remix Docs
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 }
