@@ -10,7 +10,7 @@ export default function BuildWebsite() {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className=" text-gray-700 p-8 max-w-md w-full">
-        <h1 className="text-2xl font-bold mb-6 ">Build your websites</h1>
+        <h1 className="text-2xl font-bold mb-6 ">Build your website</h1>
 
         <div className="mb-4">
           <label
